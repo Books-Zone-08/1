@@ -140,8 +140,7 @@ function login() {
     if(user === "user" && pass === "1234") {
         document.getElementById("loginPage").style.display = "none";
         document.getElementById("site").classList.remove("hidden");
-    } else {
-        alert("❌ معلومات خاطئة");
+
     }
 }
 </script>
