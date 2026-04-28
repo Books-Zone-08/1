@@ -70,7 +70,16 @@
 
 <body>
 
+<!-- LOGIN PAGE -->
+<div id="loginPage" class="login-box">
+    <h2>🔐 تسجيل الدخول</h2>
 
+    <input type="text" id="username" placeholder="اسم المستخدم"><br>
+    <input type="password" id="password" placeholder="كلمة السر"><br>
+
+    <button onclick="login()">دخول</button>
+
+    <p>جرب: user / 1234</p>
 </div>
 
 <!-- MAIN SITE -->
@@ -81,55 +90,60 @@
 </header>
 
 <nav>
-    <a href="#"home</a>
+    <a href="#">Home</a>
 </nav>
 
-<h2>available books</h2>
+<h2>Available Books</h2>
 
 <div class="book">
-    <img src="images/005" />
-    <h3<005 history</h3>
-    <p>a boy discovers he is a wizard</p>
-    <button/<buy/button>
+    <img src="images/005.jpg" />
+    <h3>History Book</h3>
+    <p>A boy discovers he is a wizard</p>
+    <button>Buy</button>
 </div>
 
 <div class="book">
-    <img src="images/harry p" />
-    <h3<harry potter qnd the sorcerer stone</h3>
-    <p>a boy discovers he is a wizard</p>
-    <button/<buy/button>
+    <img src="images/harry.jpg" />
+    <h3>Harry Potter and the Sorcerer's Stone</h3>
+    <p>A boy discovers he is a wizard</p>
+    <button>Buy</button>
 </div>
 
 <div class="book">
-    <img src="images/hobbit" />
-    <h3>the hobbit</h3>
-    <p>an  adventure in middle-earth</p>
-    <button>buy</button>
+    <img src="images/hobbit.jpg" />
+    <h3>The Hobbit</h3>
+    <p>An adventure in Middle-earth</p>
+    <button>Buy</button>
 </div>
 
 <div class="book">
-    <img src="images/dracula" />
-    <h3< dracula</h3>
-    <p>  a terrifying vampire story</p>
-    <button>buy</button>
+    <img src="images/dracula.jpg" />
+    <h3>Dracula</h3>
+    <p>A terrifying vampire story</p>
+    <button>Buy</button>
+</div>
 
 <div class="book">
-    <img src="images/paulo" />
-    <h3>the alchemist</h3>
-    <p>a journey to find personal destiny</p>
-    <button>buy</button>
+    <img src="images/paulo.jpg" />
+    <h3>The Alchemist</h3>
+    <p>A journey to find personal destiny</p>
+    <button>Buy</button>
+</div>
 
 <div class="book">
-    <img src="images/lord" />
-    <h3>the lord of the rings </h3>
-    <p>an epic journey to destroy a powerful ring</p>
-    <button>buy</button>
+    <img src="images/lord.jpg" />
+    <h3>The Lord of the Rings</h3>
+    <p>An epic journey to destroy a powerful ring</p>
+    <button>Buy</button>
+</div>
 
 <div class="book">
-    <img src="images/jane" />
-    <h3>jane eyre</h3>
-    <p>a strong woman life story</p>
-    <button>buy</button>
+    <img src="images/jane.jpg" />
+    <h3>Jane Eyre</h3>
+    <p>A strong woman's life story</p>
+    <button>Buy</button>
+</div>
+
 </div>
 
 <script>
@@ -140,7 +154,8 @@ function login() {
     if(user === "user" && pass === "1234") {
         document.getElementById("loginPage").style.display = "none";
         document.getElementById("site").classList.remove("hidden");
-
+    } else {
+        alert("❌ معلومات خاطئة");
     }
 }
 </script>
