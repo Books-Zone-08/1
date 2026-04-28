@@ -70,16 +70,7 @@
 
 <body>
 
-<!-- LOGIN PAGE -->
-<div id="loginPage" class="login-box">
-    <h2>🔐 تسجيل الدخول</h2>
 
-    <input type="text" id="username" placeholder="اسم المستخدم"><br>
-    <input type="password" id="password" placeholder="كلمة السر"><br>
-
-    <button onclick="login()">دخول</button>
-
-    <p>جرب: user / 1234</p>
 </div>
 
 <!-- MAIN SITE -->
